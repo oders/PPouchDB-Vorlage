@@ -1,0 +1,21 @@
+
+<!-- saved from url=(0051)file:///U:/eher%20mistiges/Bookman/index_pouch.html -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<script src="pouchdb-7.1.1.min.js"></script>
+</head>
+<body>
+Hi, PouchDB
+    <script>
+        var db = new PouchDB('bookmarks');
+		//alert("test");
+		console.log("System ready.");
+		PouchDB.debug.enable('*');
+		db.info().then(function (info) {
+		  console.log(info);
+		});
+		PouchDB.debug.disable();
+    </script>
+    
+</body></html>
